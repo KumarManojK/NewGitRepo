@@ -1,0 +1,773 @@
+{
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+            "name",
+            "topLevelDomain",
+            "alpha2Code",
+            "alpha3Code",
+            "callingCodes",
+            "capital",
+            "altSpellings",
+            "subregion",
+            "region",
+            "population",
+            "latlng",
+            "demonym",
+            "area",
+            "gini",
+            "timezones",
+            "borders",
+            "nativeName",
+            "numericCode",
+            "flags",
+            "currencies",
+            "languages",
+            "translations",
+            "flag",
+            "regionalBlocs",
+            "cioc",
+            "independent"
+        ],
+        "properties": {
+            "name": {
+                "type": "string",
+                "default": "",
+                "title": "The name Schema",
+                "examples": [
+                    "India"
+                ]
+            },
+            "topLevelDomain": {
+                "type": "array",
+                "default": [],
+                "title": "The topLevelDomain Schema",
+                "items": {
+                    "type": "string",
+                    "default": "",
+                    "title": "A Schema",
+                    "examples": [
+                        ".in"
+                    ]
+                },
+                "examples": [
+                    [
+                        ".in"]
+                ]
+            },
+            "alpha2Code": {
+                "type": "string",
+                "default": "",
+                "title": "The alpha2Code Schema",
+                "examples": [
+                    "IN"
+                ]
+            },
+            "alpha3Code": {
+                "type": "string",
+                "default": "",
+                "title": "The alpha3Code Schema",
+                "examples": [
+                    "IND"
+                ]
+            },
+            "callingCodes": {
+                "type": "array",
+                "default": [],
+                "title": "The callingCodes Schema",
+                "items": {
+                    "type": "string",
+                    "default": "",
+                    "title": "A Schema",
+                    "examples": [
+                        "91"
+                    ]
+                },
+                "examples": [
+                    [
+                        "91"]
+                ]
+            },
+            "capital": {
+                "type": "string",
+                "default": "",
+                "title": "The capital Schema",
+                "examples": [
+                    "New Delhi"
+                ]
+            },
+            "altSpellings": {
+                "type": "array",
+                "default": [],
+                "title": "The altSpellings Schema",
+                "items": {
+                    "type": "string",
+                    "title": "A Schema",
+                    "examples": [
+                        "IN",
+                        "Bhārat",
+                        "Republic of India",
+                        "Bharat Ganrajya"
+                    ]
+                },
+                "examples": [
+                    ["IN",
+                        "Bhārat",
+                        "Republic of India",
+                        "Bharat Ganrajya"
+                    ]
+                ]
+            },
+            "subregion": {
+                "type": "string",
+                "default": "",
+                "title": "The subregion Schema",
+                "examples": [
+                    "Southern Asia"
+                ]
+            },
+            "region": {
+                "type": "string",
+                "default": "",
+                "title": "The region Schema",
+                "examples": [
+                    "Asia"
+                ]
+            },
+            "population": {
+                "type": "integer",
+                "default": 0,
+                "title": "The population Schema",
+                "examples": [
+                    1380004385
+                ]
+            },
+            "latlng": {
+                "type": "array",
+                "default": [],
+                "title": "The latlng Schema",
+                "items": {
+                    "type": "number",
+                    "title": "A Schema",
+                    "examples": [
+                        20.0,
+                        77.0
+                    ]
+                },
+                "examples": [
+                    [20.0,
+                        77.0
+                    ]
+                ]
+            },
+            "demonym": {
+                "type": "string",
+                "default": "",
+                "title": "The demonym Schema",
+                "examples": [
+                    "Indian"
+                ]
+            },
+            "area": {
+                "type": "number",
+                "default": 0.0,
+                "title": "The area Schema",
+                "examples": [
+                    3287590.0
+                ]
+            },
+            "gini": {
+                "type": "number",
+                "default": 0.0,
+                "title": "The gini Schema",
+                "examples": [
+                    35.7
+                ]
+            },
+            "timezones": {
+                "type": "array",
+                "default": [],
+                "title": "The timezones Schema",
+                "items": {
+                    "type": "string",
+                    "default": "",
+                    "title": "A Schema",
+                    "examples": [
+                        "UTC+05:30"
+                    ]
+                },
+                "examples": [
+                    [
+                        "UTC+05:30"]
+                ]
+            },
+            "borders": {
+                "type": "array",
+                "default": [],
+                "title": "The borders Schema",
+                "items": {
+                    "type": "string",
+                    "title": "A Schema",
+                    "examples": [
+                        "AFG",
+                        "BGD",
+                        "BTN",
+                        "MMR",
+                        "CHN",
+                        "NPL",
+                        "PAK",
+                        "LKA"
+                    ]
+                },
+                "examples": [
+                    ["AFG",
+                        "BGD",
+                        "BTN",
+                        "MMR",
+                        "CHN",
+                        "NPL",
+                        "PAK",
+                        "LKA"
+                    ]
+                ]
+            },
+            "nativeName": {
+                "type": "string",
+                "default": "",
+                "title": "The nativeName Schema",
+                "examples": [
+                    "भारत"
+                ]
+            },
+            "numericCode": {
+                "type": "string",
+                "default": "",
+                "title": "The numericCode Schema",
+                "examples": [
+                    "356"
+                ]
+            },
+            "flags": {
+                "type": "object",
+                "default": {},
+                "title": "The flags Schema",
+                "required": [
+                    "svg",
+                    "png"
+                ],
+                "properties": {
+                    "svg": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The svg Schema",
+                        "examples": [
+                            "https://flagcdn.com/in.svg"
+                        ]
+                    },
+                    "png": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The png Schema",
+                        "examples": [
+                            "https://flagcdn.com/w320/in.png"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "svg": "https://flagcdn.com/in.svg",
+                    "png": "https://flagcdn.com/w320/in.png"
+                }]
+            },
+            "currencies": {
+                "type": "array",
+                "default": [],
+                "title": "The currencies Schema",
+                "items": {
+                    "type": "object",
+                    "default": {},
+                    "title": "A Schema",
+                    "required": [
+                        "code",
+                        "name",
+                        "symbol"
+                    ],
+                    "properties": {
+                        "code": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The code Schema",
+                            "examples": [
+                                "INR"
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The name Schema",
+                            "examples": [
+                                "Indian rupee"
+                            ]
+                        },
+                        "symbol": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The symbol Schema",
+                            "examples": [
+                                "₹"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "code": "INR",
+                        "name": "Indian rupee",
+                        "symbol": "₹"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "code": "INR",
+                        "name": "Indian rupee",
+                        "symbol": "₹"
+                    }]
+                ]
+            },
+            "languages": {
+                "type": "array",
+                "default": [],
+                "title": "The languages Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "iso639_1",
+                        "iso639_2",
+                        "name",
+                        "nativeName"
+                    ],
+                    "properties": {
+                        "iso639_1": {
+                            "type": "string",
+                            "title": "The iso639_1 Schema",
+                            "examples": [
+                                "hi",
+                                "en"
+                            ]
+                        },
+                        "iso639_2": {
+                            "type": "string",
+                            "title": "The iso639_2 Schema",
+                            "examples": [
+                                "hin",
+                                "eng"
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "title": "The name Schema",
+                            "examples": [
+                                "Hindi",
+                                "English"
+                            ]
+                        },
+                        "nativeName": {
+                            "type": "string",
+                            "title": "The nativeName Schema",
+                            "examples": [
+                                "हिन्दी",
+                                "English"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "iso639_1": "hi",
+                        "iso639_2": "hin",
+                        "name": "Hindi",
+                        "nativeName": "हिन्दी"
+                    },
+                    {
+                        "iso639_1": "en",
+                        "iso639_2": "eng",
+                        "name": "English",
+                        "nativeName": "English"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "iso639_1": "hi",
+                        "iso639_2": "hin",
+                        "name": "Hindi",
+                        "nativeName": "हिन्दी"
+                    },
+                    {
+                        "iso639_1": "en",
+                        "iso639_2": "eng",
+                        "name": "English",
+                        "nativeName": "English"
+                    }]
+                ]
+            },
+            "translations": {
+                "type": "object",
+                "default": {},
+                "title": "The translations Schema",
+                "required": [
+                    "br",
+                    "pt",
+                    "nl",
+                    "hr",
+                    "fa",
+                    "de",
+                    "es",
+                    "fr",
+                    "ja",
+                    "it",
+                    "hu"
+                ],
+                "properties": {
+                    "br": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The br Schema",
+                        "examples": [
+                            "India"
+                        ]
+                    },
+                    "pt": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The pt Schema",
+                        "examples": [
+                            "Índia"
+                        ]
+                    },
+                    "nl": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nl Schema",
+                        "examples": [
+                            "India"
+                        ]
+                    },
+                    "hr": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The hr Schema",
+                        "examples": [
+                            "Indija"
+                        ]
+                    },
+                    "fa": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The fa Schema",
+                        "examples": [
+                            "هند"
+                        ]
+                    },
+                    "de": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The de Schema",
+                        "examples": [
+                            "Indien"
+                        ]
+                    },
+                    "es": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The es Schema",
+                        "examples": [
+                            "India"
+                        ]
+                    },
+                    "fr": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The fr Schema",
+                        "examples": [
+                            "Inde"
+                        ]
+                    },
+                    "ja": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The ja Schema",
+                        "examples": [
+                            "インド"
+                        ]
+                    },
+                    "it": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The it Schema",
+                        "examples": [
+                            "India"
+                        ]
+                    },
+                    "hu": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The hu Schema",
+                        "examples": [
+                            "India"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "br": "India",
+                    "pt": "Índia",
+                    "nl": "India",
+                    "hr": "Indija",
+                    "fa": "هند",
+                    "de": "Indien",
+                    "es": "India",
+                    "fr": "Inde",
+                    "ja": "インド",
+                    "it": "India",
+                    "hu": "India"
+                }]
+            },
+            "flag": {
+                "type": "string",
+                "default": "",
+                "title": "The flag Schema",
+                "examples": [
+                    "https://flagcdn.com/in.svg"
+                ]
+            },
+            "regionalBlocs": {
+                "type": "array",
+                "default": [],
+                "title": "The regionalBlocs Schema",
+                "items": {
+                    "type": "object",
+                    "default": {},
+                    "title": "A Schema",
+                    "required": [
+                        "acronym",
+                        "name"
+                    ],
+                    "properties": {
+                        "acronym": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The acronym Schema",
+                            "examples": [
+                                "SAARC"
+                            ]
+                        },
+                        "name": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The name Schema",
+                            "examples": [
+                                "South Asian Association for Regional Cooperation"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "acronym": "SAARC",
+                        "name": "South Asian Association for Regional Cooperation"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "acronym": "SAARC",
+                        "name": "South Asian Association for Regional Cooperation"
+                    }]
+                ]
+            },
+            "cioc": {
+                "type": "string",
+                "default": "",
+                "title": "The cioc Schema",
+                "examples": [
+                    "IND"
+                ]
+            },
+            "independent": {
+                "type": "boolean",
+                "default": false,
+                "title": "The independent Schema",
+                "examples": [
+                    true
+                ]
+            }
+        },
+        "examples": [{
+            "name": "India",
+            "topLevelDomain": [
+                ".in"
+            ],
+            "alpha2Code": "IN",
+            "alpha3Code": "IND",
+            "callingCodes": [
+                "91"
+            ],
+            "capital": "New Delhi",
+            "altSpellings": [
+                "IN",
+                "Bhārat",
+                "Republic of India",
+                "Bharat Ganrajya"
+            ],
+            "subregion": "Southern Asia",
+            "region": "Asia",
+            "population": 1380004385,
+            "latlng": [
+                20.0,
+                77.0
+            ],
+            "demonym": "Indian",
+            "area": 3287590.0,
+            "gini": 35.7,
+            "timezones": [
+                "UTC+05:30"
+            ],
+            "borders": [
+                "AFG",
+                "BGD",
+                "BTN",
+                "MMR",
+                "CHN",
+                "NPL",
+                "PAK",
+                "LKA"
+            ],
+            "nativeName": "भारत",
+            "numericCode": "356",
+            "flags": {
+                "svg": "https://flagcdn.com/in.svg",
+                "png": "https://flagcdn.com/w320/in.png"
+            },
+            "currencies": [{
+                "code": "INR",
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }],
+            "languages": [{
+                "iso639_1": "hi",
+                "iso639_2": "hin",
+                "name": "Hindi",
+                "nativeName": "हिन्दी"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }],
+            "translations": {
+                "br": "India",
+                "pt": "Índia",
+                "nl": "India",
+                "hr": "Indija",
+                "fa": "هند",
+                "de": "Indien",
+                "es": "India",
+                "fr": "Inde",
+                "ja": "インド",
+                "it": "India",
+                "hu": "India"
+            },
+            "flag": "https://flagcdn.com/in.svg",
+            "regionalBlocs": [{
+                "acronym": "SAARC",
+                "name": "South Asian Association for Regional Cooperation"
+            }],
+            "cioc": "IND",
+            "independent": true
+        }]
+    },
+    "examples": [
+        [{
+            "name": "India",
+            "topLevelDomain": [
+                ".in"
+            ],
+            "alpha2Code": "IN",
+            "alpha3Code": "IND",
+            "callingCodes": [
+                "91"
+            ],
+            "capital": "New Delhi",
+            "altSpellings": [
+                "IN",
+                "Bhārat",
+                "Republic of India",
+                "Bharat Ganrajya"
+            ],
+            "subregion": "Southern Asia",
+            "region": "Asia",
+            "population": 1380004385,
+            "latlng": [
+                20.0,
+                77.0
+            ],
+            "demonym": "Indian",
+            "area": 3287590.0,
+            "gini": 35.7,
+            "timezones": [
+                "UTC+05:30"
+            ],
+            "borders": [
+                "AFG",
+                "BGD",
+                "BTN",
+                "MMR",
+                "CHN",
+                "NPL",
+                "PAK",
+                "LKA"
+            ],
+            "nativeName": "भारत",
+            "numericCode": "356",
+            "flags": {
+                "svg": "https://flagcdn.com/in.svg",
+                "png": "https://flagcdn.com/w320/in.png"
+            },
+            "currencies": [{
+                "code": "INR",
+                "name": "Indian rupee",
+                "symbol": "₹"
+            }],
+            "languages": [{
+                "iso639_1": "hi",
+                "iso639_2": "hin",
+                "name": "Hindi",
+                "nativeName": "हिन्दी"
+            },
+            {
+                "iso639_1": "en",
+                "iso639_2": "eng",
+                "name": "English",
+                "nativeName": "English"
+            }],
+            "translations": {
+                "br": "India",
+                "pt": "Índia",
+                "nl": "India",
+                "hr": "Indija",
+                "fa": "هند",
+                "de": "Indien",
+                "es": "India",
+                "fr": "Inde",
+                "ja": "インド",
+                "it": "India",
+                "hu": "India"
+            },
+            "flag": "https://flagcdn.com/in.svg",
+            "regionalBlocs": [{
+                "acronym": "SAARC",
+                "name": "South Asian Association for Regional Cooperation"
+            }],
+            "cioc": "IND",
+            "independent": true
+        }]
+    ]
+}
